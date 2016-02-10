@@ -1,6 +1,6 @@
 require([
     "core/AppBase",
-    "dojo/text!dashboard/appBanner.html",
+    "dojo/text!//andreasabilio.github.io/hocecilla/scripts/dashboard/appBanner.html",
     "dojo/domReady!"
 ],function(AppBase, appBanner){
 
