@@ -1,0 +1,61 @@
+/***********************************************************************************************************************
+ *
+ *                                                Core SCSS
+ *
+ ***********************************************************************************************************************/
+
+// Import Bourbon SCSS library
+@import "bourbon/bourbon";
+
+// Import Neat grid system
+@import "neat/neat";
+
+// Import font awesome icons
+@import "fontawesome/font-awesome";
+
+// Import components
+@import "components/dimensions";
+@import "components/font";
+@import "components/ripple";
+@import "components/shadows";
+
+// Layout
+@import "layout/SimpleContainer";
+@import "layout/ScrollContainer";
+@import "layout/SimpleView";
+@import "layout/ScrollBars";
+@import "layout/CollectionView";
+@import "layout/BrowserView";
+@import "layout/AppFrame";
+@import "layout/AppMenu";
+
+// Widgets
+@import "widgets/simpleCollectionItem";
+
+
+
+// Common styles
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: medium none;
+}
+
+html{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+body{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  font-size: 16px;
+  font-family: "Roboto",sans-serif;
+  background-color: $backgroundColor;
+  color: $baseTextColor;
+}

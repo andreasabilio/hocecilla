@@ -1,0 +1,54 @@
+{
+  "app": {
+    "name":           "Dashboard",
+    "slug":           "dashboard",
+    "license":        "MIT",
+    "homepage":       "http://hexacloud.github.io",
+    "logo":           "images/backnd_blk.png",
+    "author":         "Andreas Abilio",
+    "version":        "0.1.0",
+    "tags":           ["control panel", "hexacloud core", "dashboard", "monitor"]
+  },
+  "menu": [
+    {
+      "slug":           "overview",
+      "icon":           "fa fa-dashboard",
+      "parent":         null
+    },
+    {
+      "slug":           "users",
+      "icon":           "fa fa-user",
+      "parent":         null
+    },
+    {
+      "slug":           "groups",
+      "icon":           "fa fa-users",
+      "parent":         "users"
+    },
+    {
+      "slug":           "peers",
+      "icon":           "fa fa-link fa-flip-horizontal",
+      "parent":         null
+    },
+    {
+      "slug":           "apps",
+      "icon":           "fa fa-cube",
+      "parent":         null
+    },
+      {
+        "slug":           "store",
+        "icon":           "fa fa-shopping-cart",
+        "parent":         "apps"
+      },
+    {
+      "slug":           "database",
+      "icon":           "fa fa-database",
+      "parent":         "users"
+    },
+    {
+      "slug":           "about",
+      "icon":           "fa fa-star",
+      "parent":         "users"
+    }
+  ]
+}

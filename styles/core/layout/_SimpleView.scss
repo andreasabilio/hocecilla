@@ -1,0 +1,25 @@
+.SimpleView{
+
+  .container{
+    position: relative;
+    z-index: 1;
+
+    .viewBanner{
+      width: 100%;
+      height: $appBannerHeight;
+    }
+
+    .viewBody{
+      width: 100%;
+      background-color: rgba($baseBgColor, 0.6);
+    }
+  }
+
+  .viewMask{
+    width: 120%;
+    position: absolute;
+    z-index: 0;
+    top: $appBannerHeight;
+    background-color: $baseBgColor;
+  }
+}

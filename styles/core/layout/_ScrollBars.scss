@@ -1,0 +1,25 @@
+.ScrollbarRail{
+  @include transition(background 0.5s ease);
+  z-index: 100;
+  background: rgba(#555, 0);
+  cursor: pointer;
+
+  &:hover{
+    background: rgba(#555, 0.4);
+    .ScrollbarHandle{ opacity: 1; }
+  }
+
+
+  .ScrollbarHandle{
+    @include transition(opacity 0.5s ease);
+    opacity: 0;
+    background-color: #777;
+    border-radius: 3px;
+    cursor: move;
+  }
+
+  &.active, &.moving{
+    background: rgba(#555, 0);
+    .ScrollbarHandle{ opacity: 1; }
+  }
+}

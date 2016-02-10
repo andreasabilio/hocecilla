@@ -1,0 +1,119 @@
+.AppMenu{
+  overflow: hidden;
+
+  .viewBanner{
+    text-align: center;
+    cursor: pointer;
+
+    #logo{
+      height: 55%;
+      width: auto;
+      margin: rem(65) auto 0 auto;
+      opacity: 0.8;
+    }
+  }
+
+  .viewBody{
+
+
+    .appMenuItem{
+      height: auto;
+      min-height: rem(72);
+      padding: 0;
+      font-size: rem(20);
+      text-transform: capitalize;
+      position: relative;
+
+      .parent{
+        @include transition(all 0.4s ease);
+        height: rem(72);
+        color: lighten($baseTextColor, 20%);
+        position: relative;
+
+        &:hover{
+          color: $baseTextColor;
+        }
+
+        .icon{
+          font-size: rem(30);
+          position: absolute;
+          margin: auto;
+          text-align: center;
+          width: rem(30);
+          height: rem(30);
+          top: 0; left: rem(20); bottom: 0;
+        }
+
+        .label{
+          position: absolute;
+          margin: auto;
+          height: rem(28);
+          line-height: rem(28);
+          top: 0; left: rem(70); bottom: 0;
+        }
+      }
+
+      &.hasChildren{
+        & > .parent .caret{
+          @include transition(all 0.4s ease);
+          @extend .fa;
+          @extend .fa-caret-down;
+          position: absolute;
+          margin: auto;
+          width: rem(20);
+          height: rem(20);
+          text-align: center;
+          top: 0; right: rem(20); bottom: 0;
+        }
+      }
+
+      &.active{
+
+        & > .parent { color: $primaryColor; }
+
+        &.hasChildren{
+          padding-bottom: rem(10);
+          .caret{ @include transform( rotate(180deg) ); }
+        }
+      }
+
+      &.ancestor{
+
+        & > .parent{ color: lighten($baseTextColor, 5%); }
+
+        .children{ height: auto; }
+
+        &.hasChildren{
+          padding-bottom: rem(10);
+          .caret{ @include transform( rotate(180deg) ); }
+        }
+      }
+    }
+
+    .children{
+      overflow: hidden;
+      height: 0;
+
+      .appMenuItem{
+        min-height: rem(56);
+
+        .parent{
+          height: rem(56);
+
+          .icon{
+            font-size: rem(20);
+            width: rem(20);
+            height: rem(20);
+            left: rem(70);
+          }
+          .label{
+            left: rem(105);
+            height: rem(18);
+            line-height: rem(18);
+            font-size: rem(18);
+          }
+        }
+      }
+    }
+  }
+}

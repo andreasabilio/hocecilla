@@ -1,0 +1,14 @@
+.CollectionView{
+  .container{
+    width: 100%;
+  }
+
+  // XXX
+  .collectionItem{
+    padding: rem(20);
+
+    &.active{
+      color: $primaryColor;
+    }
+  }
+}

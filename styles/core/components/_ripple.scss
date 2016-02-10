@@ -1,0 +1,24 @@
+
+@include keyframes(ripple){
+  from{
+    height: 0px;
+    width: 0px;
+    opacity: 0.80;
+  }
+  to{
+    width: 800px;
+    height: 800px;
+    margin-top: -400px;
+    margin-left: -400px;
+    opacity: 0;
+  }
+}
+
+.ripple{
+  background-color: $primaryColor; 
+  border-radius: 50%;
+
+  &.active{
+    @include animation(ripple 0.5s ease-out);
+  }
+}

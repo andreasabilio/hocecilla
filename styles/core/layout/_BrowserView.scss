@@ -1,0 +1,45 @@
+.BrowserView{
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  .collection{
+    @include transition(box-shadow 0.3s ease);
+    @extend .z-depth-1;
+    position: absolute;
+    height: 100%;
+    z-index: 10;
+
+    &:hover{
+      @extend .z-depth-2;
+    }
+
+    .collectionItem{
+      @include transition(background-color 0.3s ease);
+      cursor: pointer;
+      background-color: transparent;
+
+      &:hover, &.active{ background-color: $baseBgColor; }
+    }
+  }
+
+  .content{
+    position: absolute;
+    height: 100%;
+    overflow: hidden;
+
+
+    .slidePane{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+
+      & > .SimpleView{
+        @extend .z-depth-1;
+      }
+
+      &.leave{ z-index: 0; }
+      &.enter{ z-index: 1; }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+
+// Dashboard variables
+@import "variables";
+
+// Dashboard icons
+@import "icons";
+
+// Core SCSS
+@import "../core/core";
+
+
+// App banner
+#AppBanner{
+  position: absolute;
+  z-index: -100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  i{
+    @include transform( rotate(-45deg) );
+    color: darken($backgroundColor, 5%);
+    font-size: rem(175);
+    position: absolute;
+    top: rem(195);
+    left: rem(250);
+  }
+
+}
