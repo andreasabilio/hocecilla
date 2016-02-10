@@ -11,7 +11,13 @@
         <script type="text/javascript">
             dojoConfig = {
                 async: true,
-                baseUrl: "/scripts"
+                baseUrl: "/",
+                packages: [
+                    { name: "dojo", location: "//ajax.googleapis.com/ajax/libs/dojo/1.9.2/dojo/" },
+//                    { name: "dijit", location: "lib/dijit" },
+//                    { name: "dojox", location: "lib/dojox" },
+                    { name: "core", location: "/scripts" }
+                ]
             };
         </script>
         <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/dojo/1.9.2/dojo/dojo.js"></script>
