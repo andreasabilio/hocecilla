@@ -11,7 +11,7 @@ define([
     "core/AppRouter",
     "core/AppFrame",
     "core/utils/Viewport",
-    "dojo/text!../manifest.json"
+    "dojo/text!//andreasabilio.github.io/hocecilla/scripts/manifest.json"
 ],function(declare, lang, Memory, Observable, dom, domConstruct, JSON, topic, AppRegistry, AppRouter, AppFrame, Viewport, Manifest){
 
     var AppBase = declare("core.AppBase", null, {
