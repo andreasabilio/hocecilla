@@ -5,7 +5,8 @@ define([
     "dojo/hash",
     "dojo/topic",
     "core/AppRegistry",
-    "dojo/i18n!../nls/labels"
+    "//andreasabilio.github.io/hocecilla/scripts/nls/labels"
+    //"dojo/i18n!../nls/labels"
 ],function(declare, lang, router, hash, topic, AppRegistry, labels){
     
     return declare("core.AppRouter", [], {
