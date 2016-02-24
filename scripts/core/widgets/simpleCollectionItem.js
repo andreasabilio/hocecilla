@@ -5,7 +5,7 @@ define([
     "dojo/topic",
     "dijit/_TemplatedMixin",
     "core/layout/SimpleContainer",
-    "core/utils/_SingleActiveMixin",
+    "core/utils/SingleActiveMixin",
     //"//raw.githubusercontent.com/andreasabilio/hocecilla/gh-pages/scripts/core/utils/_SingleActiveMixin.js",
     "core/utils/Ripple",
     "dojo/text!./templates/simpleCollectionItem.html"
