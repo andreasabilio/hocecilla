@@ -9,8 +9,8 @@ define([
     "dijit/registry",
     "dijit/_TemplatedMixin",
     "core/layout/SimpleContainer",
-    //"core/utils/_SingleActiveMixin",
-    "//raw.githubusercontent.com/andreasabilio/hocecilla/gh-pages/scripts/core/utils/_SingleActiveMixin.js",
+    "core/utils/_SingleActiveMixin",
+    //"//raw.githubusercontent.com/andreasabilio/hocecilla/gh-pages/scripts/core/utils/_SingleActiveMixin.js",
     "core/utils/Ripple",
     "dojo/text!./templates/appMenuItem.html"
 ],function(declare, lang, on, topic, fx, easing, domClass, registry, _TemplatedMixin, SimpleContainer, _SingleActiveMixin, Ripple, template){
